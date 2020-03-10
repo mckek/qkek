@@ -49,10 +49,9 @@ namespace laba1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (comboBox2.SelectedItem != null)
-            {
-                textBox3.Text = qwerty.GetInfo(comboBox2.SelectedItem.ToString());
-            }
+           
+                label1.Text += qwerty.GetInfo(comboBox2.SelectedItem.ToString(), comboBox1.SelectedItem.ToString());
+           
         }
     }
 }
